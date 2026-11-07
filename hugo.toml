@@ -1,7 +1,10 @@
 baseURL = "https://dersavage.github.io/non-fiction/"
 languageCode = "en-us"
 title = "Non-fiction Reviews"
-theme = "yinyang"
+theme = "emacs"
+
+[markup.highlight]
+  noClasses = false
 
 [markup.goldmark.renderer]
   # the review bodies are hand-written HTML, so let Hugo pass it through
@@ -9,25 +12,3 @@ theme = "yinyang"
 
 [params]
   description = "Non-fiction book reviews by Jan M. Savage"
-  headTitle = "Non-fiction Reviews"
-  mainSections = ["posts"]
-
-  [params.author]
-    name = "Jan M. Savage"
-    homepage = "https://dersavage.github.io/site/"
-
-[[params.socials]]
-  name = "Main site"
-  link = "https://dersavage.github.io/site/"
-
-[[params.socials]]
-  name = "Fiction"
-  link = "https://dersavage.github.io/fiction/"
-
-[[params.socials]]
-  name = "Essays"
-  link = "https://dersavage.github.io/essays/"
-
-[[params.socials]]
-  name = "RSS"
-  link = "/non-fiction/index.xml"
