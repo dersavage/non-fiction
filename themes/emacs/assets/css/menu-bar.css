@@ -88,8 +88,16 @@
   justify-content: space-between;
   padding: 0.4em 1em;
   color: var(--menu-fg);
+  font: inherit;
+  text-decoration: none;
   cursor: pointer;
   transition: background-color 0.1s ease;
+}
+
+/* links in the menu must not pick up the global (visited) link colour */
+.menu-dropdown a.menu-dropdown-item,
+.menu-dropdown a.menu-dropdown-item:visited {
+  color: var(--menu-fg);
 }
 
 .menu-dropdown-item:hover {
